@@ -1,0 +1,186 @@
+h1, h2 {
+	color: white;
+	text-align: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+/* Estilo do body para definir a imagem de fundo */
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh; /* Faz com que o fundo cubra a altura total da página */
+	background-image: url('bg81.jpg'); /* Caminho da imagem */
+	background-size: cover;
+	/* Faz com que a imagem cubra o fundo completo */
+	background-position: center; /* Centraliza a imagem */
+	background-repeat: no-repeat; /* Não repete a imagem */
+	display: flex;
+	flex-direction: column;
+}
+
+/* Container lateral esquerdo, onde fica o Sobre nos e o Contate-nos*/
+.container-esquerda {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	max-width: 280px;
+	gap: 233px;
+	background-color: rgba(219, 218, 209, 0.911);
+	height: 168%;
+}
+
+/* Container direito, onde fica o Bem-vindo e os Formularios*/
+.container-direita {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+	width: 100%;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 0px;
+}
+
+/* Container dos formulários */
+.form-container {
+	display: flex;
+	gap: 40px; /* Espaço entre os formulários */
+	max-width: 2000px; /* Limite da largura total do container */
+	padding: 20px;
+	border-radius: 10px;
+}
+
+/* Formulários*/
+form {
+	display: flex;
+	flex-direction: column;
+	width: 380px; /* Largura fixa de cada formulário */
+	padding: 20px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+label {
+	margin-bottom: 5px; /* Espaçamento entre o label e o input */
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+input {
+	border: none;
+	margin-bottom: 10px; /* Espaçamento entre os campos */
+	font-size: 16px;
+	padding: 8px;
+	border-radius: 1cap;
+	width: 360px;
+	height: 15px;
+}
+
+button {
+	align-self: center;
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	background-color: orange;
+	border-radius: 3cap;
+	border-color: orange;
+	color: white;
+	cursor: pointer;
+	width: 170px; /* Largura do botão */
+	height: 35px; /* Altura do botão */
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+/* Título de cada formulário */
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+.contatos {
+	display: flex;
+	justify-content: left;
+	flex-direction: column;
+}
+
+.contatos h4 {
+	display: flex;
+	justify-content: left;
+	margin-left: 25px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+.sobre {
+	display: flex;
+	justify-content: left; /*Posicionar o container a esquerda*/
+	flex-direction: column; /* Ícones dispostos verticalmente */
+	margin-left: 20px;
+}
+
+.sobre-label {
+	display: flex;
+	justify-content: left; /*Posicionar o container a esquerda*/
+	flex-direction: row; /* Ícones dispostos horizontalmente */
+}
+
+.sobre img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%; /* Torna a imagem circular*/
+	margin-left: 10px;
+	margin-top: 25px;
+}
+
+.sobre h4 {
+	display: flex;
+	justify-content: left;
+	margin-left: 10px;
+	margin-top: 32px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+/* Container dos ícones de contato */
+.icones-contato {
+	display: flex;
+	justify-content: left; /*Posicionar o container a esquerda*/
+	flex-direction: row; /* Ícones dispostos horizontalmente */
+	gap: 10px; /* Espaçamento entre os ícones */
+	margin-left: 20px;
+}
+
+/* Estilo dos ícones */
+.icones-contato img {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 9px; /* Espaçamento entre os ícones */
+	border-radius: 50%; /* Torna a imagem circular*/
+	transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.icones-contato img:hover {
+	transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+/* Estilos para posicionar o botão no canto superior */
+.top-button {
+	position: absolute;
+	top: 10px; /* distância do topo da tela */
+	right: 10px; /* distância da borda direita */
+	padding: 10px 20px;
+	background-color: #4CAF50; /* cor de fundo */
+	color: white; /* cor do texto */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}

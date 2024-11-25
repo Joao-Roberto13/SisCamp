@@ -1,0 +1,3 @@
+A;Joao;18;3Pt-Contest;5;Maputo;
+A;Maria;18;Dunk;5;Nampula;
+A;Wesley;20;FreeThrow;10;Beira;

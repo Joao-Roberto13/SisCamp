@@ -1,0 +1,53 @@
+/* Estilos para posicionar o botão no canto superior */
+.top-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+h1, h2, h3 {
+	text-align: center;
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+/* Contêiner principal para alinhar os contêineres esquerdo e direito lado a lado */
+.main-container {
+	display: flex;
+	height: 100vh;
+}
+
+.container-esquerda {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	max-width: 380px;
+	gap: 20px;
+	background-color: rgba(219, 218, 209, 0.911);
+	padding: 20px;
+	overflow-y: auto;
+}
+
+/* Container direito */
+.container-direita {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+	background-color: rgba(185, 122, 87, 0.911);
+	flex: 1;
+	padding: 20px;
+}
+
+.image-large {
+	width: 80%; /* aumenta o tamanho da imagem para 80% da largura do container */
+	border-radius: 8px;
+	object-fit: cover;
+}
